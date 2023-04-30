@@ -12,3 +12,5 @@ Therefore, the chosen disease-related genes chosen for the following diseases:
 | C0565599   | Maternal hypertension        | 
 | C4230888   | Intrauterine growth restriction (IUGR)        | 
 | C1386048   | Intrauterine retardation       | 
+
+The original result file can be found [here](https://github.com/JuliaScheel/NaviCenta_application_note/blob/267133b0db0a435769fb2c66c3a3e83c12c9e837/Known%20Disease-Related%20Molecules/C0810330__C0032914__C0565599__C4230888__C1386048_disease_gda_summary.xlsx). 
