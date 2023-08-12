@@ -1,14 +1,14 @@
-Network Construction of the NaviCenta
+# Network Construction of the NaviCenta
 
 This document serves as a brief introduction into network construction for Disease Maps for NaviCenta ([NaviCenta](https://www.sbi.uni-rostock.de/minerva/index.xhtml?id=NaviCenta)) users. This is followed by a summary of networks currently included in the NaviCenta and a short referenced statement of why (if at all) they are placenta specific.
 
-# Challenge and Solution
+## Challenge and Solution
 
 In contrast to “simple” diseases, “complex” diseases have a multifactorial cause by a combination of lifestyle, genetic, and genetic factors, affecting various pathways, cell types as well as tissues. Nonlinear interactions between cells and their associated pathways often leave the prediction of outcome non-intuitive [1]. These parts of a complex disease are constructed in individual submaps and later merged into the actual Disease Map (DM).
 
 In brief, a DM is a comprehensive model and intuitive visualization of cellular and molecular mechanisms specific to organ, tissue, and the disease of interest that can be translated into a computational model. It presents a knowledge repository by providing information about the regulatory relationships between biochemical entities, such as genes, proteins, small molecules, and ions. DMs are also used as a first step towards advanced network analyses and potential drug target identification [2], [3].
 
-# Introduction to Network Construction:
+## Introduction to Network Construction:
 
 Biological network construction for DMs is done using languages that facilitate both human and machine readability and interpretation. Examples are Systems Biology Markup Language (SBML), Biological Pathway Exchange (BioPAX), CellML, NeuroML, Synthetic Biology Open language (SBOL), Simulation Experiment Description Markup Language (SED-ML), and Systems Biology Graphical Notation (SBGN) [4].
 
@@ -18,7 +18,7 @@ DM networks can be constructed as process descriptions (PD) and activity flows (
 
 Figure 1: Comparison of activity flow, process description, and the combination of both. The approaches differ not only visually but also in their usability. PD includes mechanistic processes between elements, leading to a high information low readability model. The high information content ensures high reusability. Activity Flow diagrams visualize the flow of information, creating more concise visual representations, at the cost of information integration. The combined approach has the highest readability to information content ratio, but has lower reusability. Most analysis methods and tools are specific to PD or AF and cannot be applied to combined approach models. The schema was inspired by Kondratova et al. [6].
 
-# Network Construction for the NaviCenta:
+## Network Construction for the NaviCenta:
 
 The NaviCenta was created using CellDesigner [7]. To adequately capture mechanisms of importance, the NaviCenta was constructed in multiple interconnected parts and layers, curated by experts and published on the publicly available platform Minerva [8].
 
@@ -32,7 +32,7 @@ The Molecular Interaction Map (MIM) contains signal flow diagrams and are enrich
 
 Figure 2: Functional layers of disease maps. (A) The top-layer is often a description of the disease context, visualizing tissue level organization and cellular processes and phenotypes of importance. This layer is mainly used by clinicians to visualize Fluorescence-activated cell sorting (FACS) data, support patient stratification and clinical decision making. The process layer contains activity flow and process description diagrams containing key molecules and pathways depicted in the disease context top-laye. It serves as a tool for coordination and modularization and is used by experimentalists for hypothesis making and omics data visualization. The MIM contains al signal flow diagrams and are enriched with i.e. TF, miRNA, lncRNA and drug interaction data. This layer is used by bioinformaticians for the identification of molecular switches, loops, regulatory motifs, and possible drug targets. Disease maps are generated using a top-down, bottom-up, or combined (“middle-out”) approach (B). In the top-down approach databases and articles are scanned to identify relevant processes and phenotypes. In The bottom-up approach, known disease-related molecules are used as seed molecules for network construction and expansion. Activity flow diagrams describing the molecular pathways behind each identified process are then integrated with the networks generated in the top-down approach and can be extended with overlays resulting in a deep molecular level network. TF, transcription factors.
 
-# Overview of NaviCenta Networks
+## Overview of NaviCenta Networks
 
 Table 1: Overview of NaviCenta networks: This table lists all included networks and indicates the newly created submaps, as well as which ones have been adapted from other existing disease maps, and which existing models have been included, including the respective publication and a very simplified description of their placenta specific content.
 
@@ -67,7 +67,7 @@ Table 1: Overview of NaviCenta networks: This table lists all included networks 
 | Non Apoptotic Cell Death                   | x                  |                                    | WP4313                    |                 |                                                                                                                                                                                    |
 | uNK                                        | x                  |                                    |                           |                 | Uterine NKs are adapted for their function and environment [32]                                                                                                                    |
 
-# Outlook
+## Outlook
 
 The scientific outlook for Navicenta with respect to placental research encompasses a multifaceted approach aimed at unraveling the complexities of the placenta. Fundamental to this pursuit is the more thorough investigation of trophoblast cell interactions, which will further enrich the NaviCenta. Simultaneously, there is a recognized need to bolster research efforts dedicated to the placenta in general [33], [34]. By integrating disease mechanisms, including already included conditions like PE and IUGR, and expanding the scope to encompass other placental dysfunctions, we were able to develop a more comprehensive understanding of the spectrum of placental-related complications. Vital to this progression is the identification and validation of biomarkers, enabling early diagnosis and monitoring of these conditions. Collaborative endeavors and the integration of the NaviCenta into other online resources like the previous Placental Atlas Tool [35] will play an integral role in facilitating knowledge exchange and fostering advancements in placental research. Lastly, investment in translational research opens avenues for innovative therapeutic strategies to address placenta-related complications. Collectively, these endeavors will broaden our understanding of poorly studied placental dysfunctions and ultimately pave the way for improved maternal and fetal health outcomes.
 
